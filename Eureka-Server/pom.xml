@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.2.2.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.neosoft</groupId>
 	<artifactId>eureka</artifactId>
@@ -59,7 +59,7 @@
 	</dependencyManagement>
 
 	<build>
-	  <finalName>eureka-server</finalName>
+		<finalName>eureka-server</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
