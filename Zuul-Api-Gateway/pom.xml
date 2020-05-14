@@ -51,9 +51,7 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
- <build>
-        <finalName>zuul-api-gateway</finalName>
-		</build>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -67,6 +65,7 @@
 	</dependencyManagement>
 
 	<build>
+	 <finalName>zuul-api-gateway</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

@@ -1,0 +1,42 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Microservice",
+		"_postman_id": "91db20d3-7cb7-1aff-4d3f-63544e117286",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Customer",
+			"request": {
+				"url": "localhost:8000/customer-service/saveCustomer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"customer\":{\n\t\"firstName\":\"Kunal\",\n\t\"middleName\" :\"Rajendra\",\n\t\"lastName\":\"Marathe\",\n\t\"age\": 26\n\t},\n\t\"phone\": [\n\t\t {\n    \"numberType\": \"1\",\n    \"number\": 9876543210\n  },  \n  {\n    \"numberType\": \"0\",\n    \"number\": 9894561230\n    \n  }\n\t\t],\n\t\"address\":{\n\t\t \"addressLine\": \"old prakasha road\",\n     \"city\": \"shahada\",\n      \"state\": \"Maharastra\",\n       \"country\": \"India\",\n    \"pincode\": \"425409\"\n\t}\n\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer Info",
+			"request": {
+				"url": "localhost:8000/customer-service/getcustomer/25",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

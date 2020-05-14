@@ -60,9 +60,7 @@
 			<artifactId>jackson-annotations</artifactId> <version>2.7.4</version> </dependency> -->
 
 	</dependencies>
- <build>
-        <finalName>address-service</finalName>
-		</build>
+ 
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -76,6 +74,7 @@
 	</dependencyManagement>
 
 	<build>
+	<finalName>address-service</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
